@@ -340,7 +340,6 @@ z-index: -1;
 #news .news{
     flex-direction: column;
     text-align: center;
-
     background-color: #f9f9f9;
 }
 #news .container{
