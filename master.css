@@ -343,6 +343,9 @@ z-index: -1;
 
     background-color: #f9f9f9;
 }
+#news .container{
+    display: block;
+}
 #news .news-top{
     width: 500px;
     margin: 0 auto;
