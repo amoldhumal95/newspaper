@@ -343,7 +343,7 @@ z-index: -1;
     background-color: #f9f9f9;
 }
 #news .container{
-    display: block;
+    display: flexbox;
 }
 #news .news-top{
     width: 500px;
