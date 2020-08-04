@@ -40,9 +40,8 @@ p{
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 5px;
+    margin: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
     text-align: center;
 
 }
@@ -341,6 +340,7 @@ z-index: -1;
 #news .news{
     flex-direction: column;
     text-align: center;
+
     background-color: #f9f9f9;
 }
 #news .news-top{
