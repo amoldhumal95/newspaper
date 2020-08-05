@@ -37,7 +37,7 @@ p{
     letter-spacing: 0.05rem;
 }
 .section-title{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     color: black;
     margin: 10px;
@@ -292,7 +292,7 @@ z-index: -1;
 #hero h1{
     display:block ;
     width: fit-content;
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -339,15 +339,14 @@ z-index: -1;
 
 #news .news{
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     background-color: #f9f9f9;
 }
 #news .container{
     display: flexbox;
 }
 #news .news-top{
-    width: 500px;
-    margin: 0 auto;
+    width: 100%;
 }
 #news .news-bottom{
     display: flex;
@@ -357,6 +356,9 @@ z-index: -1;
 }
 #news div{
     margin: 5px;
+}
+#news .section-title, .title{
+    text-align: left;
 }
 
 /* End Services section*/
@@ -369,6 +371,9 @@ z-index: -1;
     display: block;
     padding: 10%;
 }
+#hindu .title{
+    text-align: center;
+}
 /*End The Hindu*/
 /*Times of India*/
 #ToI{
@@ -378,29 +383,27 @@ z-index: -1;
     display: block;
     padding: 10%;
 }
+#ToI .title{
+    text-align: center;
+}
 /*End Times of India */
+
+
 /*Footer */
 
 #footer{
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 #footer .footer{
-    min-height: 200px;
-    padding-top: 50px;
+    min-height: 100px;
+    padding-top: 20px;
     padding-bottom: 10px;
     flex-direction: column;
 }
-#footer h2{
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    font-size: 1.8rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 #footer .social-icon{
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 #footer .social-item{
     height: 50px;
@@ -448,9 +451,9 @@ z-index: -1;
 
 
 /*media query for tablet*/
-@media only screen and (min-width:768px){
+@media only screen and (min-width:420px){
     .cta {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         padding: 20px 60px;
     }
     h1.section-title{
@@ -458,9 +461,15 @@ z-index: -1;
     }
     /*Hero*/
     #hero h1{
-        font-size: 5rem;
+        font-size: 3rem;
     }
     /*end hero*/
+    /*News*/
+    #news .section-title, .title{
+        text-align:center;
+    }
+    
+    /*End News*/
    
     
 }
@@ -492,6 +501,18 @@ z-index: -1;
         display: none;
     }
     /*End Header*/
+    .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 5rem;
+    }
+    /*Hero*/
+    #hero h1{
+        font-size: 5rem;
+    }
+    /*end hero*/
     
 
 }
