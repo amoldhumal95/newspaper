@@ -36,6 +36,7 @@ p{
     line-height: 2.5rem;
     letter-spacing: 0.05rem;
 }
+
 .section-title{
     font-size: 3rem;
     font-weight: 300;
@@ -60,6 +61,12 @@ p{
 }
 .title span{
     color:crimson;
+}
+#more {
+    display: none;
+}
+#more1 {
+    display: none;
 }
 
 .cta{
