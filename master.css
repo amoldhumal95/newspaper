@@ -68,6 +68,9 @@ p{
 #more1 {
     display: none;
 }
+#more2 {
+    display: none;
+}
 
 .cta{
     display: inline-block;
@@ -395,6 +398,18 @@ z-index: -1;
 }
 /*End Times of India */
 
+/*Indian Express*/
+#IE{
+    text-align: center;
+}
+#IE .container{
+    display: block;
+    padding: 10%;
+}
+#IE .title{
+    text-align: center;
+}
+/*End Indian Express */
 
 /*Footer */
 
@@ -457,14 +472,14 @@ z-index: -1;
 
 
 
-/*media query for tablet*/
+/*media query for Android*/
 @media only screen and (min-width:420px){
     .cta {
-        font-size: 1.5rem;
-        padding: 20px 60px;
+        font-size: 1rem;
+        padding: 10px 20px;
     }
     h1.section-title{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     /*Hero*/
     #hero h1{
@@ -472,8 +487,45 @@ z-index: -1;
     }
     /*end hero*/
     /*News*/
-    #news .section-title, .title{
+    #news .section-title{
         text-align:center;
+        font-size: 2.5rem;
+    }
+    #news .title{
+        text-align:center;
+        font-size: 1.8rem;
+        text-decoration: underline green ;
+    }
+    
+    /*End News*/
+   
+    
+}
+/*end media query for android*/
+
+/*media query for tablet*/
+@media only screen and (min-width:786px){
+    .cta {
+        font-size: 1rem;
+        padding: 15px 30px;
+    }
+    h1.section-title{
+        font-size: 4rem;
+    }
+    /*Hero*/
+    #hero h1{
+        font-size: 3rem;
+    }
+    /*end hero*/
+    /*News*/
+    #news .section-title{
+        text-align:center;
+        font-size: 5rem;
+    }
+    #news .title{
+        text-align:center;
+        font-size: 2.1rem;
+        text-decoration: underline;
     }
     
     /*End News*/
@@ -502,7 +554,6 @@ z-index: -1;
     }
     #header .nav-list ul li a{
         font-size: 1.8rem;
-
     }
     #header .nav-list ul a:after{
         display: none;
@@ -520,6 +571,12 @@ z-index: -1;
         font-size: 5rem;
     }
     /*end hero*/
+    /*news */
+    #news .section-title{
+        text-align:center;
+        font-size: 5rem;
+    }
+    /*end news*/
     
 
 }
