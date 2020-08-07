@@ -376,6 +376,10 @@ z-index: -1;
 /*The Hindu*/
 #hindu{
     text-align: center;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: 700;
 }
 #hindu .container{
     display: block;
@@ -388,6 +392,8 @@ z-index: -1;
 /*Times of India*/
 #ToI{
     text-align: center;
+    font-size: large;
+    font-weight: 700;
 }
 #ToI .container{
     display: block;
@@ -401,6 +407,10 @@ z-index: -1;
 /*Indian Express*/
 #IE{
     text-align: center;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-weight: 700;
 }
 #IE .container{
     display: block;
