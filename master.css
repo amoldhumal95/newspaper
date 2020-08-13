@@ -100,7 +100,7 @@ p{
     background-color: transparent;
     border: 1px solid crimson;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     transition: 0.5s ease background-color;
