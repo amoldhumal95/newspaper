@@ -31,7 +31,7 @@ img{
 }
 
 p{
-    color: white;
+    color: black;
     font-size: 0.8rem;
     line-height: 2.5rem;
     letter-spacing: 0.05rem;
@@ -80,6 +80,7 @@ p{
     border: 2px solid crimson;
     border-radius: 5px;
     font-size: 2rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 10px;
@@ -117,10 +118,10 @@ p{
     background-color: transparent;
     border: 1px solid crimson;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    transition: 0.5s ease background-color;
+    transition: .5s ease background-color;
     transition-property: background;
 }
 .cta_green:hover{
@@ -158,7 +159,7 @@ p span{
 }
 #header .header{
     min-height: 8vh;
-    background-color: rgba(31,30,31,0.24);
+    background-color: black /* rgba(31,30,31,0.24)*/;
     transition: .8s ease background-color;
 }
 #header .nav-bar{
@@ -194,7 +195,7 @@ p span{
     font-weight: 500;
     letter-spacing: 0.2rem;
     text-decoration: none;
-    color: white;
+    color: crimson;
     text-transform: uppercase;
     padding: 20px;
     display: block;
@@ -222,7 +223,7 @@ p span{
     height: 60px;
     width: 60px;
     display: inline-block;
-    border: 3px solid white;
+    border: 1px solid white;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -239,7 +240,7 @@ p span{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 1px solid white;
     animation: hamburger_pulse 1s ease infinite;
 }
 #header .hamburger .bar{
@@ -278,7 +279,8 @@ z-index: -1;
 
 /* Hero Section */
 #hero{
-    background-color:black;
+    /*background:url(2.jpg);*/
+    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -315,7 +317,6 @@ z-index: -1;
     animation-delay: 2s;
 }
 #hero h1:nth-child(3){
-    animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3s;
 }
 #hero h1 span{
@@ -338,7 +339,7 @@ z-index: -1;
     animation-delay: 2.5s;
 }
 #hero h2{
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -348,6 +349,7 @@ z-index: -1;
 /* Services section*/
 
 #news .news{
+    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
     flex-direction: column;
     text-align: left;
     background-color: #f9f9f9;
@@ -365,7 +367,7 @@ z-index: -1;
     flex-wrap: wrap;  
 }
 #news div{
-    margin: 5px;
+    margin: 0px;
 }
 #news .section-title, .title{
     text-align: left;
@@ -375,10 +377,9 @@ z-index: -1;
 
 /*The Hindu*/
 #hindu{
+    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
     text-align: center;
-    background-color: black;
-    color: white;
-    font-size: large;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 #hindu .container{
@@ -391,8 +392,9 @@ z-index: -1;
 /*End The Hindu*/
 /*Times of India*/
 #ToI{
+    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
     text-align: center;
-    font-size: large;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 #ToI .container{
@@ -402,14 +404,14 @@ z-index: -1;
 #ToI .title{
     text-align: center;
 }
+
 /*End Times of India */
 
 /*Indian Express*/
 #IE{
+    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
     text-align: center;
-    background-color: black;
-    color: white;
-    font-size: large;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 #IE .container{
@@ -462,7 +464,7 @@ z-index: -1;
 }
 
 @keyframes text_reveal{
-    100%{color: white;}
+    100%{color: black;}
 }
 @keyframes text_reveal_name{
     100%{color: crimson;font-weight: 500px;}
@@ -471,11 +473,13 @@ z-index: -1;
 @keyframes hamburger_pulse{
     0%{
         opacity: 1;
-        transform: scale(1);
+        transform: scale(0);
+        background:linear-gradient(0deg, green 0%, white 50%, orange 100%);
     }
     100%{
         opacity: 0;
-        transform: scale(2.0);
+        transform: scale(2);
+        background:linear-gradient(0deg, green 0%, white 50%, orange 100%);
     }
 }
 /*end keyframes*/
@@ -485,7 +489,15 @@ z-index: -1;
 /*media query for Android*/
 @media only screen and (min-width:420px){
     .cta {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+    .cta_red {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+    .cta_green {
+        font-size: 1.5rem;
         padding: 10px 20px;
     }
     h1.section-title{
@@ -515,8 +527,16 @@ z-index: -1;
 /*media query for tablet*/
 @media only screen and (min-width:786px){
     .cta {
-        font-size: 1rem;
+        font-size: 2rem;
         padding: 15px 30px;
+    }
+    .cta_red {
+        font-size: 1.7rem;
+        padding: 10px 20px;
+    }
+    .cta_green {
+        font-size: 1.7rem;
+        padding: 10px 20px;
     }
     h1.section-title{
         font-size: 4rem;
@@ -597,6 +617,7 @@ z-index: -1;
 }
 #scrollPath{
     position: fixed;
+    color: transparent;
     top: 0;
     right: 0;
     width: 5px;
@@ -606,9 +627,10 @@ z-index: -1;
 #progressbar{
     position: fixed;
     top: 0;
+    color: transparent;
     right: 0;
     width: 3px;
-    background: linear-gradient(to top, #008aff,#00ffe7);
+    background: linear-gradient(to top, orange, lime);
     animation: animate 6s linear infinite;
 }
 @keyframes animate{
@@ -623,7 +645,7 @@ z-index: -1;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #008aff,#00ffe7);
+    background: linear-gradient(to top, orange, lime);
     filter: blur(5px);
 }
 #progressbar::after{
@@ -633,7 +655,7 @@ z-index: -1;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #008aff,#00ffe7);
+    background: linear-gradient(to top, orange, lime);
     filter: blur(10px);
 }
 
