@@ -276,6 +276,33 @@ z-index: -1;
 }
 /*End header section*/
 
+/*Temp Section*/
+#temp{
+    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
+    background-image: url('fn2.jpg');
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+}
+#temp .temp{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: center;
+}
+#temp h1{
+    display:block ;
+    width: fit-content;
+    font-size: 2.5rem;
+    padding: 10px 30px;
+    font-weight: 700;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 2s ease forwards;
+    animation-delay: 1s;
+}
+
+/*end temp section*/
 
 /* Hero Section */
 #hero{
@@ -508,6 +535,11 @@ z-index: -1;
         font-size: 3rem;
     }
     /*end hero*/
+    /*temp*/
+    #temp h1{
+        font-size: 3.5rem;
+    }
+    /*end temp*/
     /*News*/
     #news .section-title{
         text-align:center;
@@ -543,9 +575,18 @@ z-index: -1;
     }
     /*Hero*/
     #hero h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     /*end hero*/
+    /*temp*/
+    #temp h1{
+        font-size: 4rem;
+        margin-top: -400;
+    }
+    #temp{
+        background-image: url('fn2.jpg');
+    }
+    /*end temp*/
     /*News*/
     #news .section-title{
         text-align:center;
@@ -599,6 +640,11 @@ z-index: -1;
         font-size: 5rem;
     }
     /*end hero*/
+    /*temp*/
+    #temp h1{
+        font-size: 5rem;
+    }
+    /*end temp*/
     /*news */
     #news .section-title{
         text-align:center;
