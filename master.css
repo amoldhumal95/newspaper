@@ -278,7 +278,7 @@ z-index: -1;
 
 /*Temp Section*/
 #temp{
-    background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);
+    /*background:linear-gradient(-45deg, #00aa00 0%, white 35%,white 65%, orange 100%);*/
     background-image: url('fn2.jpg');
     background-size: cover;
     background-position: top right;
