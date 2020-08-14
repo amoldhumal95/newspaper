@@ -8,14 +8,17 @@ hamburger.addEventListener('click',()=>{
     mobile_menu.classList.toggle('active');
 });
 
+
 document.addEventListener('scroll', ()=>{
     var scroll_position = window.scrollY;
-    if(scroll_position >100){
+    if(scroll_position > -1){
         header.style.backgroundColor = '#29323c';
     }else{
         header.style.backgroundColor = 'transparent';
     }
 });
+
+
 
 menu_item.forEach(item=>{
     item.addEventListener('click', ()=>{
@@ -72,3 +75,54 @@ function read() {
       moreText.style.display = "inline";
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function escapeTxt(os){
+    var ns='';
+    var t;
+    var chr='';
+    var cc='';
+    var tn='';
+    for(i=0;i<256;i++){
+      tn=i.toString(16);
+      if(tn.length<2)
+      tn="0"+tn;
+      cc+=tn;
+      chr+=unescape('%'+tn)
+    }
+    cc=cc.toUpperCase();
+    os.replace(String.fromCharCode(13)+'',"%13");
+    for(q=0;q<os.length;q++){
+      t=os.substr(q,1);
+      for(i=0;i<chr.length;i++){
+        if(t==chr.substr(i,1)){
+          t=t.replace(chr.substr(i,1),"%"+cc.substr(i*2,2));
+          i=chr.length}}
+          ns+=t}
+          return ns}
+          function unescapeTxt(s){
+            return unescape(s)}
+            function wF(s){
+              document.write(decodeTxt(s))
+            }
